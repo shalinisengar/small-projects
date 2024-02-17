@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        body{
+            margin: 30px;
+            padding: auto;
+            background: linear-gradient(rgba(255, 47, 0, 0.612), rgba(255, 255, 0, 0.601),rgba(36, 5, 239, 0.563));
+            /* background-color: aquamarine; */
+        }
+        .first{
+            border: 3px solid black;
+            border-radius: 8px;
+            box-shadow: 5px;
+            width: 50vw;
+            height: 92vh;
+            background-color: gainsboro;
+           margin-left: auto;
+           margin-right: auto;
+           flex-wrap: wrap;
+           
+           
+        }
+        .form{
+            background-color: rgb(105, 195, 105);
+            padding: 25px;
+
+        }
+        h1,p{
+            margin: 0px;
+            padding: 0px;
+        }
+        .one1{
+            font-size: 30px;
+        }
+        .main{
+            padding: 30px;
+        }
+        .two{
+            padding: 5px;
+        }
+        input{
+            width: 98%;
+            padding: 5px;
+            margin-right: 5px;
+        }
+        textarea{
+            width: 98%;
+            padding: 5px;
+        }
+        #send{
+            margin: 10px;
+            padding:  8px 20px 8px 20px;
+            background-color: rgb(37, 139, 37);
+            color: #fff;
+            border: 2px solid rgb(37, 139, 37);
+            border-radius: 5px;
+        }
+        #send:hover{
+            background-color: darkgreen;
+        }
+        .two:hover{
+            background-color: rgb(202, 197, 197);
+        }
+    </style>
+</head>
+<body>
+    <div class="first">
+        
+        <nav class="form">
+            <h1 class="one1">Contact Form</h1>
+            <p class="one">please fill all the texts box. </p>
+        </nav>
+        <main class="main">
+            <label for="name">Your Name:</label><br>
+            <input class="two" type="text" id="name" placeholder="Your Full Name" required/><br><br>
+
+            <label for="email">Your Email:</label><br>
+            <input class="two" type="text" id="email"placeholder="Valid Email Address" required/><br><br>
+
+            <label for="massage">Massage:</label><br>
+            <textarea rows="10" class="two" id="massage" placeholder="Your Massage to us " required></textarea><br><br>
+
+            <label for="subject">Subject:</label><br>
+            <input class="two" id="subject" placeholder="Job Inquiry" required/><br>
+            <button id="send">Send</button>
+
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <style>
+            .body{
+                
+                margin: 50px auto;
+                padding: 30px;
+                height: max-content;
+                background-color: rgb(233, 242, 237);
+                width: max-content;
+                border: 3px solid black;
+            }
+            .main{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .button{
+                padding: 10px;
+                font-size: 20px;
+                border: 2px solid rgb(23, 22, 22);
+                background-color: rgba(148, 148, 193, 0.978);
+                border-radius: 15%;
+                height: 60px;
+                width: 60px;
+                margin: 8px 8px;
+                .section{
+                    background-color: rgb(251, 255, 12);
+                }
+            }
+            input{
+                margin: 10px;
+                height: 80px;
+                font-size: 40px;
+                width: 280px;
+                text-align: end;
+                border: 2px solid rgb(23, 22, 22);
+                border-radius: 15%;
+                background-color: rgba(227, 14, 85, 0.222);
+                
+    
+            }
+            #bg{
+                background-color: rgb(20, 252, 3);
+            }
+            #bg2{
+                background-color: rgba(255, 98, 0, 0.968);
+            }
+           
+        </style>
+    </head>
+    <body>
+        <main class="body">
+            <div  id="input"><input/></div>
+            <div class="main">
+                <button class="button" id="bg">C</button>
+                <button class="button" id="bg">%</button>
+                <button class="button" id="bg">*</button>
+                <button class="button"id="bg2">/</button>
+    
+    
+            </div>
+            <div class="main">
+                <button class="button">7</button>
+                <button class="button">8</button>
+                <button class="button">9</button>
+                <button class="button" id="bg2">+</button>
+    
+    
+            </div>
+            <div class="main">
+                <button class="button">4</button>
+                <button class="button">5</button>
+                <button class="button">6</button>
+                <button class="button" id="bg2">-</button>
+    
+    
+            </div>
+            <div class="main">
+                <button class="button">3</button>
+                <button class="button">2</button>
+                <button class="button">1</button>
+                <button class="button" id="bg2">=</button>
+    
+            </div>
+    
+        </main>
+   
+    <script src="calculator.js"></script>
+</body>
+</html>

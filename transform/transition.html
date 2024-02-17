@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            transition: 2s;
+            transition-delay: 2s;
+            transition-property: border-redius;
+        }
+        div:hover{
+            background-color: crimson;
+            border-radius: 50%;
+        } */
+        section{
+            height:82vh;
+            width: 80vw;
+            border: 2px red solid;
+            margin: 50px;
+        }
+        div{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            transition: 5s;
+        }
+        section:hover div{
+            margin-left: 92%;
+            border-radius: 100%;
+        }
+        /* div:hover{
+            color: black;
+        } */
+        div:nth-of-type(1){
+            background-color: aqua;
+            transition-timing-function: linear;
+        }
+        div:nth-of-type(2){
+            background-color: rgb(233, 141, 188);
+            transition-timing-function: ease-in;
+        }
+        div:nth-of-type(3){
+            background-color: rgb(117, 18, 73);
+            transition-timing-function: ease-out;
+        }
+        div:nth-of-type(4){
+            background-color: rgb(24, 241, 16);
+            transition-timing-function: ease-in-out;
+        }
+        div:nth-of-type(5){
+            background-color: rgb(109, 15, 249);
+            transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+        div:nth-of-type(6){
+            background-color: rgb(249, 15, 58);
+            transition-timing-function:cubic-bezier(0.27, 0.44, 0.165, 1);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</body>
+</html>

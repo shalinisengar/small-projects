@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rotate ball </title>
+   <Style>
+    section{
+        height: 98vh;
+        width: 20vw;
+        background: linear-gradient(rgba(0, 255, 76, 0.644), rgba(255, 251, 0, 0.803));
+        border: green solid 5px;
+        margin: 0%;
+        padding: 0%;
+    }
+    div{
+        height: 100px;
+        width:100px;
+        background: linear-gradient(blue, red);
+        
+        border-radius: 50%;
+        border: 5px solid rgb(22, 22, 22);
+        animation-name: ss;
+        animation-duration: 1200ms;
+        animation-timing-function: ease-in;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        
+    }
+   
+    @keyframes ss {
+       0% {
+        transform: translateY(0vh);
+       }
+       100%{
+        transform: translateY(88vh) rotate(360deg);
+       }
+
+    }
+   </Style>
+       
+</head>
+<body>
+    <section>
+        <div>
+
+        </div>
+    </section>
+</body>
+</html>
